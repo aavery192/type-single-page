@@ -11,7 +11,8 @@
     }
     
     body{
-    background-color: lightsteelblue;
+    background-color:#19373F;
+    color: #69B0A3;
     font-family: 'Recursive';
 }
 /* how the page wrapper will appear on mobile */
@@ -46,7 +47,7 @@ grid-area: a;
 }
 /* CSS for the footer */
 footer{
-    background-color: gray;
+    background-color: #69B0A3;
 }
 
 /* variable font animation */
