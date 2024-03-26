@@ -9,6 +9,7 @@
     font-style: normal;
     font-weight: normal;
     }
+
 .hero-section {
     /* display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -54,6 +55,7 @@ body{
     background-color:#19373F;
     color: #69B0A3;
     font-family: 'Recursive';
+    
 }
 /* how the page wrapper will appear on mobile */
 .page-wrapper{
@@ -65,6 +67,7 @@ body{
 @media only screen and (min-width:800px){
 .page-wrapper{
 margin-top: 180px;
+margin-left: 270px;
 display: grid;
 grid-gap: 25px;
 grid-template-columns: 1fr 60px;
@@ -73,41 +76,131 @@ grid-template-areas:
     "h v"
     "a a";
 }}
+p{
+    font-size: 20px;
+}
 
 .history {
 grid-area: h;
 }
 
+
+
 .variations{
 grid-area: v;
+}
+    #variation-list{
+        list-style-type: none;
+        font-size: 40px;
+    }
+        .monospace{
+            padding-bottom: 30px;
+            animation: monospaceChange 3s infinite;
+        }
+            @keyframes monospaceChange {
+                0%, 
+                100%{font-variation-settings: "MONO" 1, "CASL" 0, "wght" 600, "slnt" 0, "CRSV" 0;}
+                50%{font-variation-settings: "MONO" 0, "CASL" 0, "wght" 600, "slnt" 0, "CRSV" 0;}   
+        }
+        .casual{
+            padding-bottom: 30px;
+            animation: casualChange 3s infinite;
+        }
+            @keyframes casualChange {
+                0%, 
+                100%{font-variation-settings: "MONO" 0, "CASL" 1, "wght" 600, "slnt" 0, "CRSV" 0;}
+                50%{font-variation-settings: "MONO" 0, "CASL" 0, "wght" 600, "slnt" 0, "CRSV" 0;}   
+        }
+            
+        .weight{
+            padding-bottom: 30px;
+            animation: weightChange 3s infinite;
+        }
+            @keyframes weightChange {
+                0%, 
+                100%{font-variation-settings: "MONO" 0, "CASL" 0, "wght" 300, "slnt" 0, "CRSV" 0;}
+                50%{font-variation-settings: "MONO" 0, "CASL" 0, "wght" 1000, "slnt" 0, "CRSV" 0;}   
+        }
+        
+        .slant{
+            padding-bottom: 30px;
+            animation: slantChange 3s infinite;
+        }
+            @keyframes slantChange {
+                0%, 
+                100%{font-variation-settings: "MONO" 0, "CASL" 0, "wght" 600, "slnt" 0, "CRSV" 0;}
+                50%{font-variation-settings: "MONO" 0, "CASL" 0, "wght" 600, "slnt" -15, "CRSV" 0;}   
+        }
+        .cursive{
+            padding-bottom: 30px;
+            animation: cursiveChange 3s infinite;
+        }
+            @keyframes cursiveChange {
+                0%, 
+                100%{font-variation-settings: "MONO" 0, "CASL" 0, "wght" 600, "slnt" 0, "CRSV" 0;}
+                50%{font-variation-settings: "MONO" 0, "CASL" 0, "wght" 600, "slnt" 0, "CRSV" 1;}   
+        }
+
+.button {
+    /* grid-area: a; */
+    background-color: #285E70;
+    color: #A5F9EA;
+    border: none;
+    border-radius: 50px;
+    padding: 160px 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 60px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    display: block;
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+    /* text-orientation: mixed; */
+    margin: 50px;
+    margin-right: 520px;
+    position: relative;bottom: 30px;
+    
+}
+        
+.button:hover {
+    background-color: #ffc195;
 }
 
 .alphabet {
 grid-area: a;
-
 }
+#set-one p{
+    font-variation-settings: "MONO" 0, "CASL" 1, "wght" 1000, "slnt" -15, "CRSV" 1;
+    font-size: 25px;
+    position: relative;left: -400px;
+    
+}
+#set-two p{
+    font-variation-settings: "MONO" 1, "CASL" 0, "wght" 700, "slnt" 0, "CRSV" 1;
+    font-size: 25px;
+    position: relative;left: -400px;
+    
+}
+#set-three p{
+    font-variation-settings: "MONO" 0, "CASL" 0, "wght" 300, "slnt" 0, "CRSV" 0;
+    font-size: 25px;
+    position: relative;left: -400px;
+    
+}
+
 /* CSS for the footer */
 footer{
     background-color: #69B0A3;
     height: 100px;
 }
-h1{
-    font-size: 30px;
-}
-/* variable font animation */
-h4{
-    font-weight:20; 
-    text-align: left;
-    font-size: 25px;
-    animation: weightChange 7s infinite;
-}
 
-/* @keyframes weightChange {
-    0%, 100%{
-        font-variation-settings: "MONO" 1, "CASL" 0, "wght" 300, "slnt" 0, "CRSV" 0.5;
-    }
-    50%{font-variation-settings: "MONO" 0, "CASL" 1, "wght" 1000, "slnt" -15, "CRSV" 1;
-    } */
+/* variable font animation */
+h1{
+    font-variation-settings: "MONO" 1, "CASL" 0, "wght" 800, "slnt" 0, "CRSV" 0;
+    text-align: left;
+    font-size: 35px;
+}
 
 /* variable font that changes on hover */
 .variable-font{
