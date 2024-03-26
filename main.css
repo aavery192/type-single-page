@@ -67,8 +67,8 @@ body{
 #star{
     transform: scale(25); 
     z-index: -1;
-    position: relative;top: -850px ; */
- }
+    position: relative;top: -850px ;
+}
 /* how the page wrapper will appear on mobile */
 .page-wrapper{
     width: min(100% - 3rem, 80ch);
