@@ -204,14 +204,29 @@ grid-area: a;
     font-variation-settings: "MONO" 0, "CASL" 0, "wght" 300, "slnt" 0, "CRSV" 0;
     font-size: 25px;
     position: relative;left: -400px;
-    position: relative;top: -550px;
-    
+    position: relative;top: -550px; 
 }
 
 /* CSS for the footer */
 footer{
     background-color: #69B0A3;
     height: 100px;
+    /* color: #19373F; */
+    color: #ccf4ff;
+}
+h2{
+    text-align: center;
+}
+.school-text{
+    position: relative; left: 1020px;
+    position: relative; top: -80px;
+    line-height: 10px;
+}
+.contact-text{
+    position: relative; left: 200px;
+    position: relative; top: -20px;
+    line-height: 10px;
+
 }
 
 /* variable font animation */
