@@ -68,6 +68,7 @@ body{
     transform: scale(25); 
     z-index: -1;
     position: relative;top: -850px ;
+    outline-color: aliceblue;
 }
 /* how the page wrapper will appear on mobile */
 .page-wrapper{
@@ -80,10 +81,12 @@ body{
 .page-wrapper{
 margin-top: 50px;
 margin-left: 270px;
+margin-bottom: -600px;
 display: grid;
 grid-gap: 25px;
 grid-template-columns: 1fr 60px;
 grid-template-rows: auto;
+
 grid-template-areas: 
     "h v"
     "a a";
@@ -186,11 +189,15 @@ grid-area: v;
 .alphabet {
 grid-area: a;
 }
+#set-one{
+    height: fit-content;
+}
 #set-one p{
     font-variation-settings: "MONO" 0, "CASL" 1, "wght" 1000, "slnt" -15, "CRSV" 1;
     font-size: 25px;
     position: relative;left: -400px;
     position: relative;top: -550px;
+
     
 }
 #set-two p{
@@ -210,12 +217,22 @@ grid-area: a;
 /* CSS for the footer */
 footer{
     background-color: #69B0A3;
-    height: 100px;
-    /* color: #19373F; */
-    color: #ccf4ff;
+    height: 140px;
+    color: #19373F;
+    /* color: #ccf4ff; */
+}
+a{
+    text-decoration: none;
+    color: #19373F;
+}
+a:hover{
+    color: #2b5f6d;
 }
 h2{
-    text-align: center;
+    text-align: left;
+    font-size: 40px;
+    padding-top: 10px;
+    position: relative; left: 130px;
 }
 .school-text{
     position: relative; left: 1020px;
@@ -223,7 +240,7 @@ h2{
     line-height: 10px;
 }
 .contact-text{
-    position: relative; left: 200px;
+    position: relative; left: 130px;
     position: relative; top: -20px;
     line-height: 10px;
 
@@ -237,7 +254,7 @@ h1{
 }
 
 /* variable font that changes on hover */
-.variable-font{
+/* .variable-font{
     font-weight:1 ;
     height:100vh;
     font-size: 10em;
@@ -260,5 +277,5 @@ h1{
     margin: 0;
     text-align: center;
     font-variation-settings: "wght" 120, "wdth" 0, "XXXX" 100;
-}
+} */
 
