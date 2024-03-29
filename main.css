@@ -9,7 +9,10 @@
     font-style: normal;
     font-weight: normal;
     }
-
+*{
+    outline: solid;
+    color: rgb(255, 83, 83);
+}
 .hero-section {
     /* display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -18,7 +21,7 @@
     grid-row-gap: 0px; */
     display: grid;
     grid-template-rows: 700px 4fr 100px;
-    grid-template-columns: 150px 1fr 150px;
+    grid-template-columns: 300px 1fr 150px;
     /* background-color: rgb(255, 255, 255); */
 }   
 
@@ -34,8 +37,7 @@ h1{
     font-variation-settings: "MONO" 1, "CASL" 0, "wght" 1000, "slnt" 0, "CRSV" 0;
     margin: 15px;
     line-height: 0.85;
-    position:relative;top: 75px;
-    position:relative;left:200px;
+
 
     /* animation: weightChange 7s infinite; */
 }
@@ -50,8 +52,7 @@ h2{
     font-variation-settings: "MONO" 0, "CASL" 1, "wght" 300, "slnt" -15, "CRSV" 1;
     margin: 15px;
     line-height: 0.85;
-    position:relative;top: 75px;
-    position: relative;left: -3px ;
+
 }
 body{
     background-color:#19373F;
@@ -81,12 +82,12 @@ margin-top: 50px;
 margin-left: 270px;
 display: grid;
 grid-gap: 25px;
-grid-template-columns: 1fr 60px;
+grid-template-columns: 2fr 1fr;
 grid-template-rows: auto;
 
 grid-template-areas: 
-    "h v"
-    "b a";
+    "h h v"
+    "b a a";
 }}
 
 
@@ -159,6 +160,7 @@ grid-area: v;
 
 .button {
     /* grid-area: a; */
+    grid-area: b;
     background-color: #285E70;
     color: #A5F9EA;
     border: none;
@@ -176,8 +178,7 @@ grid-area: v;
     /* text-orientation: mixed; */
     margin: 60px;
     margin-right: 520px;
-    position: relative;top: -580px;
-    
+
 }
         
 .button:hover {
@@ -193,24 +194,15 @@ grid-area: a;
 }
 #set-one p{
     font-variation-settings: "MONO" 0, "CASL" 1, "wght" 1000, "slnt" -15, "CRSV" 1;
-    font-size: 25px;
-     position: relative;left: -400px;
-     position: relative;top: -550px; 
-
-    
+    font-size: 25px;  
 }
 #set-two p{
     font-variation-settings: "MONO" 1, "CASL" 0, "wght" 700, "slnt" 0, "CRSV" 1;
     font-size: 25px;
-    position: relative;left: -400px;
-    position: relative;top: -550px;
-    
 }
 #set-three p{
     font-variation-settings: "MONO" 0, "CASL" 0, "wght" 300, "slnt" 0, "CRSV" 0;
     font-size: 25px;
-    position: relative;left: -400px;
-    position: relative;top: -550px; 
 }
 
 /* CSS for the footer */
@@ -231,16 +223,12 @@ h4{
     text-align: left;
     font-size: 40px;
     padding-top: 10px;
-    position: relative; left: 130px;
+
 }
 .school-text{
-    position: relative; left: 1020px;
-    position: relative; top: -80px;
     line-height: 10px;
 }
 .contact-text{
-    position: relative; left: 130px;
-    position: relative; top: -20px;
     line-height: 10px;
 
 }
