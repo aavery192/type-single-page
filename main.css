@@ -9,10 +9,10 @@
     font-style: normal;
     font-weight: normal;
     }
-*{
+/* *{
     outline: solid;
     color: rgb(255, 83, 83);
-}
+} */
 .hero-section {
     /* display: grid;
     grid-template-columns: repeat(4, 1fr);
